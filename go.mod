@@ -1,4 +1,4 @@
-module dsas_proto
+module github.com/E-Bor/DSAS_Proto
 
 go 1.23.2
 
