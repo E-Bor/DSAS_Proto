@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package reports;
+
+option go_package = "e-bor.reports.v1;reportsv1";
+
+service Report {
+  rpc Start(StartRequest) returns (StartResponse);
+}
+
+message StartRequest {
+  string datasource_name = 1;
+  string report_type_name = 2;
+}
+
+message StartResponse {
+  int64 report_start_id = 1;
+}
