@@ -16,7 +16,7 @@ message StartRequest {
   google.protobuf.Timestamp eta = 4;
 }
 
-enum Status {Success = 0; Failed = 1;}
+enum Status {failed = 0; success = 1;}
 
 message StartResponse {
   int64 report_start_id = 1;
