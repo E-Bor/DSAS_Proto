@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Установим переменные
 PROTO_DIR="proto"
 OUT_DIR="./gen/go"
 BRANCH="main"
