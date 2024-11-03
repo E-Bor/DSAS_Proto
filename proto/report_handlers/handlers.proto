@@ -19,7 +19,13 @@ message StartRequest {
 
 enum Status {failed = 0; success = 1;}
 
+message Error {
+  uint32 status = 1;
+  string message = 2;
+}
+
 message StartResponse {
   Status status = 1;
   string traceId = 2;
+  Error error = 3;
 }
