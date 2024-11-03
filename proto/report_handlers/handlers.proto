@@ -11,10 +11,10 @@ service Report {
 
 message StartRequest {
   optional string datasource_name = 1;
-//  string report_type_nm = 2;
-//  google.protobuf.Timestamp eta = 3;
-//  google.protobuf.Timestamp dateFrom = 4;
-//  google.protobuf.Timestamp dateTo = 5;
+  string report_type_nm = 2;
+  google.protobuf.Timestamp eta = 3;
+  google.protobuf.Timestamp dateFrom = 4;
+  google.protobuf.Timestamp dateTo = 5;
 }
 
 enum Status {failed = 0; success = 1;}
