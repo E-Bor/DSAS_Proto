@@ -14,11 +14,13 @@ message StartRequest {
   string report_type_name = 2;
   string trace_id = 3;
   google.protobuf.Timestamp eta = 4;
+  google.protobuf.Timestamp dateFrom = 5;
+  google.protobuf.Timestamp dateTo = 6;
 }
 
 enum Status {failed = 0; success = 1;}
 
 message StartResponse {
-  int64 report_start_id = 1;
-  Status status = 2;
+  Status status = 1;
+  string traceId = 2;
 }
